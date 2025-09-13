@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>plastron</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription & Connexion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Section Inscription -->
+    <section id="inscription-section">
+      <h2>Inscription</h2>
+      <form id="signup-form">
+        <input type="text" id="signup-name" placeholder="Nom complet" required>
+        <input type="email" id="signup-email" placeholder="Email" required>
+        <input type="password" id="signup-password" placeholder="Mot de passe" required>
+        <button type="submit">S'inscrire</button>
+      </form>
+    </section>
+
+    <!-- Section Connexion -->
+    <section id="connexion-section">
+      <h2>Connexion</h2>
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Mot de passe" required>
+        <button type="submit">Se connecter</button>
+      </form>
+    </section>
+
+    <!-- Section Profil utilisateur -->
+    <section id="user-info" class="hidden">
+      <h2><a href="https://sites.google.com/view/plastron" target="_blank">SITES.GOOGLE.COM/VIEW/PLASTRON</a></h2>
+      <p id="display-name"></p>
+      <p id="display-email"></p>
+      <button id="logout-btn">Se déconnecter</button> 
+
+      <!-- Connexion par nom -->
+      <div id="nom-utilisateur-section">
+        <input type="text" id="nomUtilisateur" placeholder="Entrez votre nom">
+        <button type="button" onclick="connecterUtilisateur(document.getElementById('nomUtilisateur').value)">Se connecter</button>
+        <div id="message"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
